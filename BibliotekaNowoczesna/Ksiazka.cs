@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.CodeAnalysis;
 
 namespace BibliotekaNowoczesna;
 
     public class Ksiazka
     {
     public Ksiazka() { }
+
+    [SetsRequiredMembers]
     public Ksiazka(string? isbn, string? tytul)
     {
         Isbn = isbn;
